@@ -1,1 +1,109 @@
-/*# sourceMappingURL=tyle.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --body-color: #e4e9f7;
+  --sidebar-color: #fff;
+  --primary-color: #695cfe;
+  --primary-color-light: #f6f5ff;
+  --toggle-color: #ddd;
+  --text-color: #707070;
+  --tran-03: all 0.2s ease;
+  --tran-03: all 0.3s ease;
+  --tran-04: all 0.4s ease;
+  --tran-05: all 0.5s ease;
+}
+
+body {
+  height: 100vh;
+  background: var(--body-color);
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 250px;
+  padding: 10px 14px;
+  background-color: var(--sidebar-color);
+}
+.sidebar header {
+  position: relative;
+}
+.sidebar header .image-text {
+  display: flex;
+  align-items: center;
+}
+.sidebar header .image-text .image {
+  min-width: 60px;
+  display: flex;
+  align-items: center;
+}
+.sidebar header .image-text .image .text {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-color);
+}
+.sidebar header .image-text .image .header-text {
+  display: flex;
+  flex-direction: column;
+}
+.sidebar header .image-text .image .header-text .name {
+  font-weight: 600;
+}
+.sidebar header .image-text .image .header-text .pro {
+  margin-top: -2px;
+}
+.sidebar header .image-text .image img {
+  width: 40px;
+}
+.sidebar header .toggle {
+  position: absolute;
+  top: 50%;
+  right: -25px;
+  transform: translateY(-50%);
+  height: 25px;
+  width: 25px;
+  background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: var(--sidebar-color);
+  font-size: 22px;
+}
+.sidebar .menu-bar li {
+  height: 50px;
+  margin-top: 10px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.sidebar .menu-bar li .icon {
+  min-width: 60px;
+  font-size: 20px;
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sidebar .menu-bar li a {
+  text-decoration: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.sidebar .menu-bar li a .icon {
+  min-width: 60px;
+  font-size: 20px;
+  color: var(--text-color);
+}
+.sidebar .menu-bar li a .text {
+  color: var(--text-color);
+}/*# sourceMappingURL=tyle.css.map */
